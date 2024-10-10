@@ -13,24 +13,21 @@ function start() {
 
 function notice() {
 	const notice = document.querySelector(".notice");
+	const DISMISS_NOTICE_UNTIL = "kJRPXQY6";
 	if (!notice) return;
-
-	const cookies = document.cookie.split(";").reduce(
-		(acc, pair) => {
-			const [key, value] = pair.split("=");
-			acc[key.trim()] = value?.trim();
-			return acc;
-		},
-		{} as Record<string, string>,
-	);
-	if (cookies["dismiss-notice"]) {
+	const time = window.localStorage.getItem(DISMISS_NOTICE_UNTIL);
+	if (time && Number(time) > Date.now()) {
 		notice.remove();
 		return;
 	}
+	window.localStorage.removeItem(DISMISS_NOTICE_UNTIL);
 	notice.classList.remove("hidden");
 	notice.querySelector("button")?.addEventListener("click", (event) => {
 		(event.target as HTMLButtonElement)?.closest(".notice")?.remove();
-		document.cookie = `dismiss-notice=please; Max-Age=${60 * 60 * 24 * 30}`;
+		window.localStorage.setItem(
+			DISMISS_NOTICE_UNTIL,
+			(Date.now() + 1000 * 60 * 60 * 24 * 30).toString(),
+		);
 	});
 }
 

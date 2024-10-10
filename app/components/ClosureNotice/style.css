@@ -3,6 +3,7 @@
 	color: black;
 	border: 2px solid rgb(165, 0, 0);
 	position: relative;
+	padding: 0.5rem;
 
 	&:before {
 		content: "🌧️";

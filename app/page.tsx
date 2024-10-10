@@ -49,18 +49,6 @@ export default () => (
 				respect the wildlife and keep dogs on a lead.
 			</p>
 			<Campaign />
-			<p className="highlight">
-				Our{" "}
-				<a
-					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment"
-					target="_blank"
-					rel="noopener"
-				>
-					GoFundMe
-				</a>{" "}
-				is raising funds to replace vital equipment. Help us sustain this
-				community nature reserve 🌿. Every contribution helps.
-			</p>
 			<OpeningTimes />
 			<p>
 				Check our{" "}

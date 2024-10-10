@@ -39,18 +39,6 @@ export default () => (
 		<article id="the-pasture-is-a-community-space">
 			<h3>Make a charitable donation</h3>
 			<Campaign />
-			<p className="highlight">
-				Our{" "}
-				<a
-					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment"
-					target="_blank"
-					rel="noopener"
-				>
-					GoFundMe
-				</a>{" "}
-				is raising funds to replace vital equipment. Help us sustain this
-				community nature reserve 🌻. Every contribution helps.
-			</p>
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its Trust Deed. Charity details
