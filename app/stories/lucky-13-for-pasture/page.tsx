@@ -3,8 +3,7 @@ import { NavigationLink } from "../../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "Lucky 13 for Pasture",
-	description:
-		"An article about girl guides visit to Long Lane Pasture.",
+	description: "An article about girl guides visit to Long Lane Pasture.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2011/2011Aug08.pdf",
 	},
