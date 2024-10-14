@@ -19,7 +19,7 @@ export default () => (
 				href="http://www.the-archer.co.uk/archive/2010/2010Oct09.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
@@ -44,7 +44,7 @@ export default () => (
 		<p>
 			Recent wildlife sightings have included slow-worms, voles, toads and
 			frogs, and of course the exciting wasp spiders, so aptly named with their
-			bright warning coloration. There will soon be other colours to enjoy in
+			bright warning colouration. There will soon be other colours to enjoy in
 			the leaves. Delicate golden birch hues, the toffee brown and ripening
 			acorns of deciduous oak, lovely russets and crimsons all herald the new
 			season.

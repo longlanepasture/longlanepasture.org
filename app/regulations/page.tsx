@@ -79,7 +79,7 @@ export default () => (
 			<li>Erecting any furniture, stand or structure.</li>
 			<li>Fixing or displaying any sign.</li>
 			<li>Using any radio, music machine, public address system or similar.</li>
-			<li>Playing games with balls or frisbees.</li>
+			<li>Playing games with balls or frisbee.</li>
 			<li>Flying model aeroplanes, kites or similar.</li>
 			<li>Lighting fires, stoves, barbecues or fireworks.</li>
 			<li>

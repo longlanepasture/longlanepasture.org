@@ -107,7 +107,7 @@ export default () => (
 				. If you have an idea for a project you'd like us to assist with, please{" "}
 				<ContactUsLink />.
 			</p>
-			<h3>Contibute to the website</h3>
+			<h3>Contribute to the website</h3>
 			<p>
 				This website is maintained as an open source project, and{" "}
 				<NavigationLink to="source">contributions are welcome</NavigationLink>.

@@ -26,7 +26,7 @@ export default () => (
 				Managed entirely by passionate volunteers, Long Lane Pasture offers a
 				safe environment for countless species of plants and animals, while
 				providing a place for people of all ages to connect with nature.
-				However, our equipment is aging and in urgent need of replacement. Our
+				However, our equipment is ageing and in urgent need of replacement. Our
 				ride-on mower and brush cutters, essential for maintaining the pasture
 				and keeping it accessible to everyone, are wearing out. Without these
 				tools, it becomes much harder to manage the space and care for the

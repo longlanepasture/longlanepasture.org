@@ -20,7 +20,7 @@ export default () => (
 				href="http://the-archer.co.uk/archive/2012/2012Aug05.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
@@ -53,7 +53,7 @@ export default () => (
 		</p>
 		<p>
 			Supporters are encouraged to sign up to Gift Aid as this enables the trust
-			to reclaim the tax on donations, at no extra costo the donor. Regular
+			to reclaim the tax on donations, at no extra cost to the donor. Regular
 			donations by banker's order are particularly welcome
 		</p>
 		<h3>Butterflies and blackberries</h3>

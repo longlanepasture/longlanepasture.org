@@ -121,7 +121,7 @@ export default () => (
 		</article>
 		<article id="a-public-greenspace">
 			<h2>
-				A Public Greenspace for a Century
+				A Public Green space for a Century
 				<a
 					href="#a-public-greenspace"
 					aria-label="Anchor link to A Public Greenspace for a Century"
@@ -149,7 +149,7 @@ export default () => (
 				afterwards made displays of grasses and wild flowers. It is proving as
 				popular today as it was at the turn of the 20th century. The Pasture has
 				outlived many threats and is now half its original size, but continues
-				as a delightful greenspace for both people and wildlife.
+				as a delightful green space for both people and wildlife.
 			</p>
 			<p>
 				In 2012 Long Lane Pasture has launched a Centenary Photo & Art

@@ -73,7 +73,7 @@ export default () => (
 			</table>
 			<hr />
 			<p>
-				Interested in contibuting to Long Lane Pasture? Check out our{" "}
+				Interested in contributing to Long Lane Pasture? Check out our{" "}
 				<NavigationLink to="contribute">Contribute page</NavigationLink> to
 				learn more.
 			</p>

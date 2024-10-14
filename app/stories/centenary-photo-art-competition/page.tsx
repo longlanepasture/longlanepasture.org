@@ -69,7 +69,7 @@ export default () => (
 			Entries can be for sale at the Arts Depot, but we request that 50% of sale
 			income is donated to the Long Lane Pasture Trust. Copyright will be
 			retained by the entrant, but Long Lane Pasture Trust reserves the right to
-			use entrants’ work for promotional purposes. Whilst we will do our best to
+			use entrants' work for promotional purposes. Whilst we will do our best to
 			ensure the safety of work during the competition process, we cannot take
 			responsibility for any loss or damage.
 		</p>

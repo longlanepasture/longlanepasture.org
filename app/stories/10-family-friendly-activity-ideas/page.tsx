@@ -44,11 +44,11 @@ export default () => {
 			</p>
 			<h3>{++i}. Nature-Inspired Art Workshop</h3>
 			<p>
-				Bring sketchbooks, pencils, or watercolors and have a family art session
-				in the open air. Encourage children to paint or draw what they see
-				around them, whether it's a specific tree, a patch of wildflowers, or a
-				bird. You could even collect leaves or flowers (responsibly) to press or
-				use for a collage back at home.
+				Bring sketchbooks, pencils, or watercolours and have a family art
+				session in the open air. Encourage children to paint or draw what they
+				see around them, whether it's a specific tree, a patch of wildflowers,
+				or a bird. You could even collect leaves or flowers (responsibly) to
+				press or use for a collage back at home.
 			</p>
 			<h3>{++i}. Mini Bug Safari</h3>
 			<p>
@@ -106,14 +106,14 @@ export default () => {
 			<h3>{++i}. Pasture Photography Contest</h3>
 			<p>
 				Equip kids with disposable cameras or your phone and encourage them to
-				take photos of their favorite things in the pasture. Afterward, you can
+				take photos of their favourite things in the pasture. Afterward, you can
 				have a family photography competition where everyone gets to show off
 				their best pictures. You could even frame the photos or make a collage
 				to remember the day.
 			</p>
 			<h3>{++i}. Outdoor Picnic and Storytelling</h3>
 			<p>
-				Bring a nurishing picnic and enjoy a meal together in the pasture.
+				Bring a nourishing picnic and enjoy a meal together in the pasture.
 				During the picnic, talk about where the food ingredients come from and
 				how they connect to nature, like how bees help pollinate the plants that
 				provide fruits and vegetables.

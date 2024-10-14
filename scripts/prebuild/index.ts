@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
-import { ammenities } from "./ammenities/index.ts";
+import { amenities } from "./amenities/index.ts";
 import { friends } from "./friends/index.ts";
 import { gallery } from "./gallery/index.ts";
 import { humans } from "./humans/index.ts";
@@ -22,7 +22,7 @@ const setups: [string, Promise<string>][] = [
 		"./public/sitemap.xml",
 		sitemap({ base: "https://longlanepasture.org", datestamp }),
 	],
-	["./dynamic/ammenities/index.ts", ammenities()],
+	["./dynamic/amenities/index.ts", amenities()],
 	["./dynamic/friends/index.ts", friends()],
 	["./dynamic/gallery/index.ts", gallery()],
 	["./dynamic/navigation/index.ts", navigation()],

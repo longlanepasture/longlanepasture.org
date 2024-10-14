@@ -27,7 +27,7 @@ export default () => (
 				href="http://www.the-archer.co.uk/archive/2015/2015Jul09.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
@@ -84,7 +84,7 @@ export default () => (
 			climate!
 		</p>
 		<p>
-			For information visit the website, www.longlanepasture. org and follow on
+			For information visit the website, www.longlanepasture.org and follow on
 			Twitter <NavigationLink to="x">@LLPasture</NavigationLink>.
 		</p>
 		<p className="end">

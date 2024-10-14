@@ -28,7 +28,7 @@ export default () => (
 				href="http://www.the-archer.co.uk/archive/2020/2020Nov12.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
@@ -94,7 +94,7 @@ export default () => (
 		</figure>
 		<p>
 			So forget the gym and boring repetitive exercises, please consider joining
-			us, and benefitting your own physical and mental health at the same time.
+			us, and benefiting your own physical and mental health at the same time.
 			In present circumstances, it's best to bring your own gloves and secateurs
 			or loppers. We meet at the pasture every Saturday morning from 10am to 12
 			noon.

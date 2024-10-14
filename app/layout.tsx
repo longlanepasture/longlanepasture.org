@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: {
 			url: "https://longlanepasture.org/assets/llpsquare.jpeg",
-			alt: "View from the medow at Long Lane Pasture",
+			alt: "View from the meadow at Long Lane Pasture",
 		},
 	},
 };

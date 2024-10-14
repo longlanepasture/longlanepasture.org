@@ -19,7 +19,7 @@ export default () => (
 				href="http://www.the-archer.co.uk/archive/2009/2009AugArcher.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
@@ -27,7 +27,7 @@ export default () => (
 		</p>
 		<p>
 			<strong>
-				The oficial opening of Long Lane Pasture took place in such beautiful
+				The official opening of Long Lane Pasture took place in such beautiful
 				weather it seemed that nature itself approved of this long awaited day.
 			</strong>
 		</p>
@@ -52,8 +52,8 @@ export default () => (
 		</p>
 		<p>
 			his remnant of historic Finchley Common is now a wildlife refuge. Its
-			ponds attract native amphibians, birds and dragonlies whilst a variety of
-			wild lowers, brambles and bushes sustain bees, butterlies and other
+			ponds attract native amphibians, birds and dragonflies whilst a variety of
+			wild lowers, brambles and bushes sustain bees, butterflies and other
 			insects. There are bird feeding stations, an easy walking grassland trail
 			plus a hard standing path and seating area.
 		</p>

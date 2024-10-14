@@ -27,7 +27,7 @@ export default () => (
 				href="http://www.the-archer.co.uk/archive/2017/2017Oct03.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
@@ -55,7 +55,7 @@ export default () => (
 			nature and wildlife in this 2.6-acre green oasis since it was put under
 			the loving care of volunteers 12 years ago. The pasture, opposite the fire
 			station on Long Lane, is open every day from 10am to dusk and you can find
-			special events at www. longlanepasture.org.
+			special events at www.longlanepasture.org.
 		</p>
 		<p className="end">
 			<i>

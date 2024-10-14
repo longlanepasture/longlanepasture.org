@@ -96,7 +96,6 @@ export default () => (
 					loop
 					playsInline
 					controls={false}
-					className="backgound"
 					id={Math.random().toString(36).replace(/^\d\./, "")}
 				>
 					<source src="/assets/llp.mp4" type="video/mp4" />

@@ -1,4 +1,4 @@
-import { ammenities } from "../../dynamic/ammenities";
+import { amenities } from "../../dynamic/amenities";
 import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/NavigationLink";
@@ -288,19 +288,27 @@ export default () => (
 				adjacent householder only.
 			</p>
 		</article>
-		<article id="ammenities">
+		<article id="amenities">
 			<h2>
-				Ammenities
-				<a href="#ammenities" aria-label="Anchor link to Ammenities"></a>
+				Amenities
+				<a href="#amenities" aria-label="Anchor link to Amenities"></a>
 			</h2>
-			{ammenities.map((ammenity) => (
-				<div key={ammenity.name}>
-					<h4 className={ammenity.available ? "check" : "uncheck"}>
-						{ammenity.name}
-					</h4>
-					<p>{ammenity.description}</p>
-				</div>
-			))}
+			{amenities.map(
+				({
+					name,
+					description,
+					available,
+				}: {
+					name: string;
+					description: string;
+					available: boolean;
+				}) => (
+					<div key={name}>
+						<h4 className={available ? "check" : "uncheck"}>{name}</h4>
+						<p>{description}</p>
+					</div>
+				),
+			)}
 		</article>
 	</>
 );

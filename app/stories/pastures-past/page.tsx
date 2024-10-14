@@ -19,7 +19,7 @@ export default () => (
 				href="http://the-archer.co.uk/archive/2012/2012Jul04.pdf"
 				target="_blank"
 				rel="noopener"
-				alia-label="Read the full article in The Archer"
+				aria-label="Read the full article in The Archer"
 			>
 				The Archer
 			</a>
