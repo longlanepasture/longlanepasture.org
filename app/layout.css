@@ -249,6 +249,12 @@ summary {
 	cursor: pointer;
 	text-decoration: underline;
 }
+.noafter::after {
+	display: none;
+}
+.float {
+	float: inline-end;
+}
 a[href^="http"]::after {
 	content: "⬈";
 	font-size: 0.75rem;
