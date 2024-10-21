@@ -73,15 +73,14 @@ export default () => (
 				<NavigationLink to="contribute">donations and support</NavigationLink>{" "}
 				to maintain and restore the Pasture.
 			</p>
-			<p>Please,</p>
+			<h3>Help us keep this space safe and enjoyable for everyone.</h3>
 			<ul>
+				<li>Respect the plants and wildlife.</li>
+				<li>Use bins for litter and waste.</li>
 				<li>
-					Dogs welcome <strong>on leads</strong>
+					Dogs welcome <strong>on leads</strong>.
 				</li>
-				<li>Collect your litter and waste</li>
-				<li>No bicycles or motorbikes</li>
-				<li>No ball games</li>
-				<li>No fires</li>
+				<li>No bikes, ball games, or fires.</li>
 			</ul>
 			<p>
 				<NavigationLink to="regulations">
