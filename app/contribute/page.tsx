@@ -1,8 +1,7 @@
-import dynamic from "next/dynamic";
-import { volunteers } from "../../dynamic/volunteers/index.ts";
 import { mergeMetadata } from "../../lib/helpers/index.ts";
 import { Campaign } from "../components/Campaign/index.tsx";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { DynamicVolunteers } from "../components/DynamicVolunteers/index.tsx";
 import { NavigationLink } from "../components/NavigationLink/index.tsx";
 import "../components/styles/contributors.css";
 import { Volunteer } from "../components/Volunteer/index.tsx";
@@ -11,10 +10,6 @@ export const metadata = mergeMetadata({
 	title: "Contribute to Long Lane Pasture",
 	description:
 		"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.",
-});
-
-const Randomise = dynamic(() => import("../components/Randomise"), {
-	ssr: false,
 });
 
 export default () => (
@@ -88,14 +83,7 @@ export default () => (
 				have a biscuit with us! 🍪
 			</p>
 			<div className="contributors">
-				<Randomise>
-					{volunteers.map(({ src, alt }) => (
-						<figure key={alt}>
-							<img src={src} alt={alt} loading="lazy" />
-							<figcaption>{alt}</figcaption>
-						</figure>
-					))}
-				</Randomise>
+				<DynamicVolunteers />
 			</div>
 			<h3>Initiate educational or community projects</h3>
 			<p>

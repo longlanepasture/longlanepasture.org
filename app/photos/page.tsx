@@ -1,11 +1,7 @@
-import dynamic from "next/dynamic";
 import { pictures } from "../../dynamic/gallery";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { DynamicPicturesGallery } from "../components/DynamicPicturesGallery";
 import { NavigationLink } from "../components/NavigationLink";
-
-const PicturesGallery = dynamic(() => import("../components/PicturesGallery"), {
-	ssr: false,
-});
 
 export default () => (
 	<article id="photos-gallery">
@@ -21,7 +17,7 @@ export default () => (
 			Have a photo you'd like to share?{" "}
 			<ContactUsLink>Get in touch with us</ContactUsLink>.
 		</p>
-		<PicturesGallery pictures={pictures} />
+		<DynamicPicturesGallery pictures={pictures} />
 		<p>All photos are taken by volunteers and visitors to Long Lane Pasture.</p>
 	</article>
 );

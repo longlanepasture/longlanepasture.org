@@ -1,7 +1,7 @@
-import dynamic from "next/dynamic";
 import { pictures } from "../dynamic/gallery";
 import { mergeMetadata } from "../lib/helpers";
 import { Campaign } from "./components/Campaign";
+import { DynamicPicturesGallery } from "./components/DynamicPicturesGallery";
 import { NavigationLink } from "./components/NavigationLink";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { Volunteer } from "./components/Volunteer";
@@ -13,10 +13,6 @@ export const metadata = mergeMetadata({
 	alternates: {
 		canonical: "https://longlanepasture.org/",
 	},
-});
-
-const PicturesGallery = dynamic(() => import("./components/PicturesGallery"), {
-	ssr: false,
 });
 
 export default () => (
@@ -63,7 +59,7 @@ export default () => (
 		</article>
 		<article id="photos-gallery">
 			<h3>Photos taken at Long Lane Pasture</h3>
-			<PicturesGallery pictures={pictures} />
+			<DynamicPicturesGallery pictures={pictures} />
 		</article>
 	</>
 );
