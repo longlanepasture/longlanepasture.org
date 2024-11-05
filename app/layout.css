@@ -371,6 +371,19 @@ table {
 	justify-content: space-around;
 	text-align: center;
 }
+.zebra-list {
+	list-style-type: none;
+	li {
+		padding: 2px 0;
+	}
+	li::before {
+		content: "✿";
+		margin: 0 0.5em;
+	}
+	li:nth-child(odd) {
+		background: var(--background-highlight);
+	}
+}
 @media (max-width: 840px) {
 	.spread {
 		display: block;

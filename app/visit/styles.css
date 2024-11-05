@@ -1,0 +1,8 @@
+.stamps {
+	text-align: center;
+	img {
+		float: line-start;
+		margin: 0.5rem;
+		border-radius: 50%;
+	}
+}

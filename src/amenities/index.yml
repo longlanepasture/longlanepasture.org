@@ -1,7 +1,7 @@
 - name: Pathways
   description: Well-maintained paths that allow visitors to walk around the pasture and enjoy its natural beauty. The paths are generally level and accessible.
   available: true
-- name: Sheltered Gazebos
+- name: Sheltered Gazebo
   description: Our accessible pathway reached the main pond, where the gazebo provides a place to sit and enjoy the view.
   available: true
 - name: Seating Areas
@@ -10,8 +10,8 @@
 - name: Waste Bins
   description: Waste bins provided for visitors to dispose of litter responsibly. Please help keep the pasture clean by using these bins or taking your waste home with you.
   available: true
-- name: Information Boards
-  description: Information board at the entrance to the pasture that provides details about the site, including a map and information about the wildlife that can be found there.
+- name: Information Board
+  description: The information board at the entrance provides details about the site, including a map and information about the wildlife that can be found there.
   available: true
 - name: Ponds
   description: Small ponds that serve as habitats for amphibians and aquatic plants. Important ecological features and offer a spot for quiet observation.
@@ -26,14 +26,14 @@
   description: No public toilets on the site.
   available: false
 - name: Play Areas
-  description: No playgrounds or other play facilities. Intended for quiet enjoyment and wildlife observation.
+  description: No playgrounds or other play facilities.
   available: false
 - name: Cafes or Shops
-  description: No cafes, shops, or other commercial facilities on the site. Visitors are encouraged to bring their own refreshments and take their litter home.
+  description: No cafes, shops, or other commercial facilities on the site. Visitors are encouraged to bring their own refreshments and dispose of litter responsibly.
   available: false
 - name: Formal Gardens
   description: The pasture is a wild meadow and is managed to encourage natural habitats and biodiversity.
   available: false
 - name: Parking
-  description: Free parking in Long Lane. Do not park in the access road leading up to the Pasture. This is for the use of the adjacent householder only.
+  description: Free parking is available on Long Lane. Do not park in the access road leading up to the Pasture. This is for the use of the adjacent householder only.
   available: false

@@ -3,6 +3,7 @@ import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/NavigationLink";
 import { OpeningTimes } from "../components/OpeningTimes";
+import "./styles.css";
 
 export const metadata = mergeMetadata({
 	title: "Visitor Information for Long Lane Pasture",
@@ -101,12 +102,96 @@ export default () => (
 					aria-label="Anchor link to Wildlife you might see"
 				></a>
 			</h2>
-			<h3>Meadow</h3>
-			<p>Butterflies, Grasshopper, Wasp Spider, Ladybird</p>
-			<h3>Pond</h3>
-			<p>Moorhen, Frog/tadpole, Toad, Newt, Dragonfly, Water Boatman</p>
+			<h3>In the Meadow</h3>
+			<ul className="zebra-list">
+				<li>
+					<strong>Butterflies</strong> gliding across wildflowers
+				</li>
+				<li>
+					<strong>Grasshoppers</strong> leaping through tall grasses
+				</li>
+				<li>
+					<strong>Wasp Spiders</strong> weaving intricate webs
+				</li>
+				<li>
+					<strong>Ladybirds</strong> adding bright spots of color
+				</li>
+			</ul>
+			<div className="stamps">
+				<img
+					src="/assets/wildlife-128/blister-beetle.jpeg"
+					alt="blister beetle"
+				/>
+				<img src="/assets/wildlife-128/honeybee.jpeg" alt="honeybee" />
+				<img
+					src="/assets/wildlife-128/speckled-wood-butterfly.jpeg"
+					alt="speckled wood butterfly"
+				/>
+				<img
+					src="/assets/wildlife-128/flower-crab-spider.jpeg"
+					alt="flower crab spider"
+				/>
+				<img
+					src="/assets/wildlife-128/cinnabar-moth-caterpillar.jpeg"
+					alt="cinnabar moth caterpillar"
+				/>
+				<img src="/assets/wildlife-128/ladybird.jpeg" alt="ladybird" />
+				<img src="/assets/wildlife-128/hopper.jpeg" alt="grasshopper" />
+				<img src="/assets/wildlife-128/wasp-spider.jpeg" alt="wasp spider" />
+			</div>
+			<h3>Around the Pond</h3>
+			<ul className="zebra-list">
+				<li>
+					<strong>Moorhens</strong> paddling along the water's edge
+				</li>
+				<li>
+					<strong>Frogs and tadpoles</strong> thriving in spring
+				</li>
+				<li>
+					<strong>Toads and newts</strong> hiding in the shallows
+				</li>
+				<li>
+					<strong>Dragonflies</strong> darting across the surface
+				</li>
+				<li>
+					<strong>Water Boatmen</strong> skating on the water
+				</li>
+			</ul>
+			<div className="stamps">
+				<img
+					src="/assets/wildlife-128/moorhen-in-brambles.jpeg"
+					alt="moorhen"
+				/>
+				<img
+					src="/assets/wildlife-128/emperor-dragonfly.jpeg"
+					alt="dragonfly"
+				/>
+				<img src="/assets/wildlife-128/frog.jpeg" alt="frog" />
+				<img src="/assets/wildlife-128/moorhen-in-pond.jpeg" alt="moorhen" />
+				<img src="/assets/wildlife-128/young-frog.jpg" alt="young frog" />
+			</div>
 			<h3>Throughout the Pasture</h3>
-			<p>Birds, Fox, Bank Vole, Field Mouse</p>
+			<ul className="zebra-list">
+				<li>
+					<strong>Birds</strong> singing from the treetops
+				</li>
+				<li>
+					<strong>Foxes</strong> passing quietly through at dawn and dusk
+				</li>
+				<li>
+					<strong>Bank Voles and field mice</strong> scurrying in the
+					undergrowth
+				</li>
+			</ul>
+			<div className="stamps">
+				<img
+					src="/assets/wildlife-128/song-thrush-bird.jpeg"
+					alt="song thrush bird"
+				/>
+				<img src="/assets/wildlife-128/fox.jpeg" alt="fox" />
+				<img src="/assets/wildlife-128/bank-vole.jpeg" alt="bank vole" />
+				<img src="/assets/wildlife-128/kestrel.jpeg" alt="kestrel" />
+			</div>
 			<hr />
 			<p>
 				Check out our full{" "}
