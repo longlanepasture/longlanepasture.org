@@ -55,7 +55,9 @@ export default () => (
 		<article id="volunteers-are-welcome">
 			<Volunteer />
 			More information about ways to help available on{" "}
-			<NavigationLink to="contribute">Contribute page</NavigationLink>.
+			<NavigationLink to="contribute">
+				Contribute page
+			</NavigationLink>.
 		</article>
 		<article id="photos-gallery">
 			<h3>Photos taken at Long Lane Pasture</h3>
