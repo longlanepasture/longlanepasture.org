@@ -64,6 +64,5 @@ We try to use out-of-the-box Next.js features as much as possible. The structure
 These directories are used for automated build of modules later consumed by the application. Naming conventions are important, as they are used in the build scripts. Please adhere to the naming conventions.
 
 - `assets/newsletters`: `llp-newsletter<NUMBER>-<MONTH>-<YEAR>.pdf`
-- `assets/records/accounts` and `assets/records/reports`: `llp-<TYPE><YEAR>.pdf`
 - `assets/volunteers`: `<NAME>.jpg`
 - Other `assets/*` files and directories are not structured in any specific way.

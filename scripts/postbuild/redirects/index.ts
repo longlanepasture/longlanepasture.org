@@ -6,30 +6,31 @@
  */
 export async function redirects() {
 	return [
+		["/aboutthepasture*", "/history/", "301"],
 		[
 			"/aboutthepasture/LLP-ManagementPlan.pdf",
 			"/assets/documents/llp-management-plan.pdf",
 			"301",
 		],
-		["/aboutthepasture*", "/history/", "301"],
-		["/events*", "/", "301"],
-		["/getinvolved.html", "/contribute/", "301"],
-		["/news*", "/history/", "301"],
-		["/thetrust*", "/the-trust/", "301"],
-		["/newsletters*", "/history/#newsletters", "301"],
-		["/photogallery*", "/photos/", "301"],
-		["/visitor-information/", "/visit/", "301"],
-		["/visitorinfo.html", "/visit/", "301"],
-		[
-			"/donate/",
-			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
-			"307",
-		],
+		["/assets/records*", "/the-trust/", "301"],
 		[
 			"/donate",
 			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
 			"307",
 		],
+		[
+			"/donate/",
+			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
+			"307",
+		],
+		["/events*", "/", "301"],
+		["/getinvolved.html", "/contribute/", "301"],
+		["/news*", "/history/", "301"],
+		["/newsletters*", "/history/#newsletters", "301"],
+		["/photogallery*", "/photos/", "301"],
+		["/thetrust*", "/the-trust/", "301"],
+		["/visitor-information/", "/visit/", "301"],
+		["/visitorinfo.html", "/visit/", "301"],
 	]
 		.map((line) => line.join(" "))
 		.join("\n");

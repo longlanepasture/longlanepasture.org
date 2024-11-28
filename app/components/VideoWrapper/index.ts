@@ -11,6 +11,7 @@ export function VideoWrapper({
 	playbackRate?: number;
 }) {
 	useEffect(() => {
+		console.log(children);
 		if (!children.props.id) return;
 		const video = document.getElementById(
 			children.props.id,

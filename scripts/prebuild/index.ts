@@ -6,7 +6,6 @@ import { gallery } from "./gallery/index.ts";
 import { humans } from "./humans/index.ts";
 import { navigation } from "./navigation/index.ts";
 import { newsletters } from "./newsletters/index.ts";
-import { records } from "./records/index.ts";
 import { sitemap } from "./sitemap/index.ts";
 import { species } from "./species/index.ts";
 import { volunteers } from "./volunteers/index.ts";
@@ -27,7 +26,6 @@ const setups: [string, Promise<string>][] = [
 	["./dynamic/gallery/index.ts", gallery()],
 	["./dynamic/navigation/index.ts", navigation()],
 	["./dynamic/newsletters/index.ts", newsletters()],
-	["./dynamic/records/index.ts", records()],
 	["./dynamic/species/index.ts", species()],
 	["./dynamic/volunteers/index.ts", volunteers()],
 ];
