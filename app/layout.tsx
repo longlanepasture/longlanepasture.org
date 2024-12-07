@@ -87,7 +87,7 @@ export default function RootLayout({
 					</nav>
 				</header>
 				<main>
-					<ClosureNotice display={false} />
+					<ClosureNotice display={true} />
 					{children}
 					<footer>
 						<NavList filter="footer" />
