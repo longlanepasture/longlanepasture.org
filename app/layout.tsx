@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 		shortcut: "/favicon.ico",
 		apple: "/assets/apple-touch-icon.png",
 	},
-	generator: "https://github.com/long-lane-pasture/longlanepasture.github.io",
+	generator: "https://github.com/longlanepasture/longlanepasture.org",
 	openGraph: {
 		title:
 			"Long Lane Pasture: A community-run nature reserve in Finchley, North London.",

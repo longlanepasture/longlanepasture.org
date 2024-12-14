@@ -5,7 +5,7 @@
   "homepage": "https://longlanepasture.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/long-lane-pasture/longlanepasture.github.io"
+    "url": "https://github.com/longlanepasture/longlanepasture.org"
   },
   "scripts": {
     "prepare": "node --experimental-strip-types ./scripts/prebuild/index.ts",
