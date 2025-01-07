@@ -11,10 +11,14 @@ function start() {
 	notice();
 }
 
-function notice() {
+async function notice() {
 	const notice = document.querySelector(".notice");
-	const DISMISS_NOTICE_UNTIL = "kJRPXQY6";
 	if (!notice) return;
+	const shouldShowNotice = await fetch("/api/notice")
+		.then((response) => response.text())
+		.then((remoteState) => /^t/i.test(remoteState));
+	if (!shouldShowNotice) return notice.remove();
+	const DISMISS_NOTICE_UNTIL = "kJRPXQY6";
 	const time = window.localStorage.getItem(DISMISS_NOTICE_UNTIL);
 	if (time && Number(time) > Date.now()) {
 		notice.remove();
