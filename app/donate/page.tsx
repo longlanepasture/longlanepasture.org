@@ -1,4 +1,4 @@
-import { Campaign } from "../components/Campaign";
+import { DonateButton } from "../components/DonateButton";
 
 export default () => (
 	<>
@@ -14,7 +14,6 @@ export default () => (
 			</figure>
 		</article>
 		<article id="donate">
-			<Campaign />
 			<p>
 				Long Lane Pasture is more than just a green space—it's a thriving haven
 				for wildlife and a peaceful retreat for the local community. We are
@@ -35,26 +34,18 @@ export default () => (
 
 			<p>
 				By donating, you're not just supporting a green space—you're helping us
-				replace this vital equipment so we can continue to protect biodiversity,
-				maintain safe access, and sustain a valuable community resource. Every
-				contribution, no matter how small, will make a real difference in
-				maintaining this precious pasture for future generations.
+				continue to protect biodiversity, maintain safe access, and sustain a
+				valuable community resource. Every contribution, no matter how small,
+				will make a real difference in maintaining this precious pasture for
+				future generations.
 			</p>
 
 			<p>
 				Thank you for being part of something that truly matters to both
 				wildlife and our community!
 			</p>
-			<p>
-				Visit our{" "}
-				<a
-					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment"
-					target="_blank"
-					rel="noopener"
-				>
-					Go Fund Me page
-				</a>{" "}
-				to donate.
+			<p className="center">
+				<DonateButton />
 			</p>
 		</article>
 	</>

@@ -1,6 +1,5 @@
 import { pictures } from "../dynamic/gallery";
 import { mergeMetadata } from "../lib/helpers";
-import { Campaign } from "./components/Campaign";
 import { DynamicPicturesGallery } from "./components/DynamicPicturesGallery";
 import { NavigationLink } from "./components/NavigationLink";
 import { OpeningTimes } from "./components/OpeningTimes";
@@ -44,7 +43,6 @@ export default () => (
 				wildflowers thrive. Enjoy a peaceful escape from the city. Please
 				respect the wildlife and keep dogs on a lead.
 			</p>
-			<Campaign />
 			<OpeningTimes />
 			<p>
 				Check our{" "}

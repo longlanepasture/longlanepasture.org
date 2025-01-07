@@ -15,12 +15,12 @@ export async function redirects() {
 		["/assets/records*", "/the-trust/", "301"],
 		[
 			"/donate",
-			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
+			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment/donate",
 			"307",
 		],
 		[
 			"/donate/",
-			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
+			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment/donate",
 			"307",
 		],
 		["/events*", "/", "301"],

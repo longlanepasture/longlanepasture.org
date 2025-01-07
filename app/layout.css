@@ -287,6 +287,9 @@ ol {
 		text-indent: 0.5rem;
 	}
 }
+.center {
+	text-align: center;
+}
 .caption-on {
 	position: relative;
 	figcaption {

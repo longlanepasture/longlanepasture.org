@@ -1,6 +1,6 @@
 import { mergeMetadata } from "../../lib/helpers/index.ts";
-import { Campaign } from "../components/Campaign/index.tsx";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { DonateButton } from "../components/DonateButton/index.tsx";
 import { DynamicVolunteers } from "../components/DynamicVolunteers/index.tsx";
 import { NavigationLink } from "../components/NavigationLink/index.tsx";
 import "../components/styles/contributors.css";
@@ -33,7 +33,18 @@ export default () => (
 		</article>
 		<article id="the-pasture-is-a-community-space">
 			<h3>Make a charitable donation</h3>
-			<Campaign />
+			<p>
+				We receive no funding from the local council and rely on donations to
+				undertake our work. By donating, you're not just supporting a green
+				space—you're helping us continue to protect biodiversity, maintain safe
+				access, and sustain a valuable community resource. Every contribution,
+				no matter how small, will make a real difference in maintaining this
+				precious pasture for future generations.
+			</p>
+			<p className="center">
+				<DonateButton />
+			</p>
+
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its Trust Deed. Charity details
@@ -47,12 +58,6 @@ export default () => (
 					the registry
 				</a>
 				.{" "}
-			</p>
-			<p>
-				<strong>
-					We receive no funding from the local council and rely on donations to
-					undertake our work. We accept donations of any size.
-				</strong>
 			</p>
 			<p>
 				Cheques can be sent by mail to No. 256 Long Lane, London N3 2RN. If you
