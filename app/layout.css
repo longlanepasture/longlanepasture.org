@@ -50,6 +50,11 @@ video {
 }
 img {
 	max-width: 100%;
+
+	&.float {
+		float: inline-start;
+		margin-inline-end: 0.5rem;
+	}
 }
 header {
 	color: var(--text-color);
@@ -153,7 +158,8 @@ nav {
 			transition: transform 0.1s ease-in-out;
 		}
 	}
-	nav:focus-within {
+	nav:focus-within,
+	nav:has(:active) {
 		ul {
 			left: -20%;
 			box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
