@@ -11,7 +11,7 @@ function start() {
 	notice();
 }
 
-async function notice() {
+async function notice(): Promise<void> {
 	const notice = document.querySelector(".notice");
 	if (!notice) return;
 	const shouldShowNotice = await fetch("/api/notice")

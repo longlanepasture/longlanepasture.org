@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { navigation } from "../../../dynamic/navigation";
 import { LinkItem } from "../LinkItem";
 

@@ -77,7 +77,7 @@ export default function RootLayout({
 			<body>
 				<header>
 					<h1>
-						<NavigationLink to="home">🦋 Long Lane Pasture</NavigationLink>
+						<NavigationLink to="home">Long Lane Pasture</NavigationLink>
 					</h1>
 					<nav>
 						<a className="hamburger" href="#!">

@@ -66,3 +66,7 @@ These directories are used for automated build of modules later consumed by the 
 - `assets/newsletters`: `llp-newsletter<NUMBER>-<MONTH>-<YEAR>.pdf`
 - `assets/volunteers`: `<NAME>.jpg`
 - Other `assets/*` files and directories are not structured in any specific way.
+
+### Sitemap
+
+Sitemap is generated automatically and includes all pages in "app" directory, as well as all PDF files under "public/assets/" directory.
