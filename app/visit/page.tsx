@@ -49,10 +49,8 @@ export default () => (
 			</p>
 			<OpeningTimes />
 			<p className="highlight">
-				<em className="title">Winter Months Notice ☔</em>
-				During winter, early sunsets, muddy paths, and challenging weather
-				affect our schedule. Opening times will depend on volunteer
-				availability, daylight hours, and weather conditions.
+				Opening times depend on volunteer availability. While we aim to open
+				during scheduled hours, we cannot always guarantee it.
 			</p>
 			<p>
 				There is one short hard surfaced all-weather footpath, which takes you
