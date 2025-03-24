@@ -98,7 +98,12 @@ export default () => (
 					host school groups
 				</NavigationLink>{" "}
 				. If you have an idea for a project you'd like us to assist with, please{" "}
-				<ContactUsLink />.
+				<ContactUsLink />.<br />
+				You may also be interested to view our{" "}
+				<NavigationLink to="risk assessment">
+					latest risk assessment
+				</NavigationLink>{" "}
+				for the pasture.
 			</p>
 		</article>
 	</>

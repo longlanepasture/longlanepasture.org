@@ -441,7 +441,9 @@ footer {
 		text-align: center;
 		li {
 			display: inline-block;
-			margin: 0 0.25rem;
+			a {
+				padding: 0.5rem;
+			}
 		}
 	}
 }

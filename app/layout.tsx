@@ -40,6 +40,13 @@ export const metadata: Metadata = {
 			alt: "View from the meadow at Long Lane Pasture",
 		},
 	},
+	manifest: "/site.webmanifest",
+	authors: [
+		{
+			name: "Oprn Source Contributors",
+			url: "https://github.com/longlanepasture/longlanepasture.org",
+		},
+	],
 };
 export const viewport: Viewport = {
 	themeColor: "white",

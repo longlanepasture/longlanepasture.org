@@ -3,6 +3,12 @@ import { navigation } from "../../../dynamic/navigation";
 import { LinkItem } from "../LinkItem";
 
 /**
+ * Normalise strings for comparison.
+ */
+const normalise = (string: string): string =>
+	string?.toLowerCase?.().replace(/[\s_]/g, "-");
+
+/**
  * Get Link element for a page by substring of the page name or path.
  */
 export function NavigationLink({
@@ -15,7 +21,7 @@ export function NavigationLink({
 }): JSX.Element | null {
 	const page = navigation.find((link) =>
 		Object.values(link).some((value: any): boolean =>
-			value.toString?.().toLowerCase().includes(to),
+			normalise(value.toString?.())?.includes(normalise(to)),
 		),
 	);
 	if (!page) return null;
