@@ -48,10 +48,6 @@ export default () => (
 				the site.
 			</p>
 			<OpeningTimes />
-			<p className="highlight">
-				Opening times depend on volunteer availability. While we aim to open
-				during scheduled hours, we cannot always guarantee it.
-			</p>
 			<p>
 				There is one short hard surfaced all-weather footpath, which takes you
 				alongside butterfly border and the pond to a seating area. This is

@@ -35,4 +35,40 @@ async function notice(): Promise<void> {
 	});
 }
 
+(() => {
+	const icons = [
+		"🌱",
+		"🌿",
+		"🍃",
+		"🌾",
+		"🌳",
+		"🌲",
+		"🌷",
+		"🌸",
+		"🌹",
+		"🌺",
+		"🌻",
+		"🌼",
+	];
+	const originalTitle = document.title;
+	let timeout: ReturnType<typeof setInterval>;
+	function prefixTitle(prefix?: string) {
+		document.title = [
+			prefix ?? icons[Math.floor(Math.random() * icons.length)],
+			originalTitle,
+		]
+			.filter(Boolean)
+			.join(" ");
+	}
+	document.addEventListener("visibilitychange", () => {
+		if (document.visibilityState === "visible") {
+			clearInterval(timeout);
+			prefixTitle("");
+		} else {
+			prefixTitle();
+			timeout = setInterval(prefixTitle, 1000);
+		}
+	});
+})();
+
 export {};

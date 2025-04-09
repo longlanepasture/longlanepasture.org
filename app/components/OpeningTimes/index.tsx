@@ -22,6 +22,10 @@ export function OpeningTimes() {
 					))}
 				</tbody>
 			</table>
+			<p className="highlight">
+				Opening times depend on volunteer availability. While we aim to open
+				during scheduled hours, we cannot always guarantee it.
+			</p>
 		</>
 	);
 }

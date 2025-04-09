@@ -8,7 +8,6 @@ export async function headers(): Promise<string> {
 	const table: string[][] = [
 		["Access-Control-Allow-Origin", "*"],
 		["X-Robots-Tag", "all"],
-		["X-Frame-Options", "DENY"],
 		["X-XSS-Protection", "1"],
 		["X-Content-Type-Options", "nosniff"],
 		[
