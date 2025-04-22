@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 	manifest: "/site.webmanifest",
 	authors: [
 		{
-			name: "Oprn Source Contributors",
+			name: "Open Source Contributors",
 			url: "https://github.com/longlanepasture/longlanepasture.org",
 		},
 	],
