@@ -14,9 +14,6 @@
   nav: false
 - name: Regulations
   nav: false
-- name: Risk Assessment
-  path: https://docs.google.com/spreadsheets/d/e/2PACX-1vRSP24K00boxUPWP7NOOXJj9r9pc1R_aSk4HtJdo8pNT0LXg3ybPS4FtCOj29dhLlYLdNkZHOcDqJu0/pubhtml
-  nav: false
 - name: Privacy
   nav: false
 - name: 💚 Donate
