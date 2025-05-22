@@ -9,11 +9,6 @@ export async function headers(): Promise<string> {
 		["Access-Control-Allow-Origin", "*"],
 		["X-Robots-Tag", "all"],
 		["X-XSS-Protection", "1"],
-		["X-Content-Type-Options", "nosniff"],
-		[
-			"Strict-Transport-Security",
-			`max-age=${60 * 60 * 24 * 7}; includeSubDomains`,
-		],
 		// Must include 'unsafe-inline' because Next uses inline scripts
 		[
 			"Content-Security-Policy",
