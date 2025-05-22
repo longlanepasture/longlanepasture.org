@@ -1,6 +1,7 @@
 import { amenities } from "../../dynamic/amenities";
 import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 import { OpeningTimes } from "../components/OpeningTimes";
 import "./styles.css";
@@ -186,7 +187,7 @@ export default () => (
 				<img src="/assets/wildlife-128/bank-vole.jpeg" alt="bank vole" />
 				<img src="/assets/wildlife-128/kestrel.jpeg" alt="kestrel" />
 			</div>
-			<hr />
+			<HorizontalLine />
 			<p>
 				Check out our full{" "}
 				<NavigationLink to="species">species checklist</NavigationLink> for a

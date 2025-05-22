@@ -425,6 +425,13 @@ hr {
 .tagline {
 	font-style: italic;
 }
+.horizontalline {
+	text-align: center;
+	svg {
+		width: 500px;
+		max-width: 100%;
+	}
+}
 .end {
 	text-align: end;
 }

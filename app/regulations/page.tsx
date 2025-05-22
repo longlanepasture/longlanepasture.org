@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers";
+import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
@@ -111,7 +112,7 @@ export default () => (
 		<h3>Amendment to Regulations</h3>
 
 		<p>LLPT or its management may amend these Regulations at any time.</p>
-		<hr />
+		<HorizontalLine />
 		<p>
 			Check our <NavigationLink to="visit">visitor information</NavigationLink>{" "}
 			and come enjoy the pasture!

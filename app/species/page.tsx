@@ -1,5 +1,6 @@
 import { species } from "../../dynamic/species";
 import { mergeMetadata } from "../../lib/helpers";
+import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
@@ -51,7 +52,7 @@ export default () => (
 							</li>
 						))}
 				</ul>
-				<hr />
+				<HorizontalLine />
 				<p>
 					Check our{" "}
 					<NavigationLink to="visit">visitor information</NavigationLink> and

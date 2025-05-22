@@ -1,5 +1,6 @@
 import { friends } from "../../dynamic/friends";
 import { mergeMetadata } from "../../lib/helpers";
+import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
@@ -71,7 +72,7 @@ export default () => (
 					))}
 				</tbody>
 			</table>
-			<hr />
+			<HorizontalLine />
 			<p>
 				Interested in contributing to Long Lane Pasture? Check out our{" "}
 				<NavigationLink to="contribute">Contribute page</NavigationLink> to

@@ -1,5 +1,6 @@
 import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
@@ -57,7 +58,7 @@ export default () => (
 			website. If you follow a link to another website, please review their
 			privacy notice.
 		</p>
-		<hr />
+		<HorizontalLine />
 		<p>
 			Now that you're familiar with our Privacy Policy, why not plan your visit
 			to Long Lane Pasture? Check out our{" "}

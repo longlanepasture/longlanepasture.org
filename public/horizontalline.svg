@@ -1,0 +1,41 @@
+<svg width="100%" height="60" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+  <!-- Left wave -->
+  <path d="M0,30 Q200,10 390,30" stroke="#4a7c59" stroke-width="2" fill="none"/>
+
+  <!-- Right wave -->
+  <path d="M800,30 Q600,50 410,30" stroke="#4a7c59" stroke-width="2" fill="none"/>
+
+  <!-- Leaf decorations (left side, tilted toward line) -->
+  <g fill="#4a7c59" transform="rotate(-45 100 30)">
+    <path d="M100,22 q-5,-12 -15,0 q10,12 15,0" />
+  </g>
+  <g fill="#4a7c59" transform="rotate(20 200 28)">
+    <path d="M200,20 q-5,-12 -15,0 q10,12 15,0" />
+  </g>
+  <g fill="#4a7c59" transform="rotate(-15 300 32)">
+    <path d="M300,24 q-5,-12 -15,0 q10,12 15,0" />
+  </g>
+  <g fill="#4a7c59" transform="rotate(40 360 30)">
+    <path d="M360,28 q-5,-12 -15,0 q10,12 15,0" />
+  </g>
+
+  <!-- Leaf decorations (right side, tilted toward line) -->
+  <g fill="#4a7c59" transform="rotate(-25 700 30)">
+    <path d="M700,38 q5,-12 15,0 q-10,12 -15,0" />
+  </g>
+  <g fill="#4a7c59" transform="rotate(50 600 32)">
+    <path d="M600,44 q5,-12 15,0 q-10,12 -15,0" />
+  </g>
+  <g fill="#4a7c59" transform="rotate(-15 500 28)">
+    <path d="M500,36 q5,-12 15,0 q-10,12 -15,0" />
+  </g>
+  <g fill="#4a7c59" transform="rotate(25 440 30)">
+    <path d="M440,34 q5,-12 15,0 q-10,12 -15,0" />
+  </g>
+
+  <!-- Centerpiece: touching leaves -->
+  <g fill="#4a7c59">
+    <path d="M400,30 q-5,-12 -15,0 q10,12 15,0" /> <!-- Left-facing leaf -->
+    <path d="M400,30 q5,-12 15,0 q-10,12 -15,0" />  <!-- Right-facing leaf -->
+  </g>
+</svg>

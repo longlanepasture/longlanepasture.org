@@ -1,10 +1,11 @@
 import { mergeMetadata } from "../../lib/helpers/index.ts";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { DonateButton } from "../components/DonateButton/index.tsx";
-import { DynamicVolunteers } from "../components/DynamicVolunteers/index.tsx";
-import { NavigationLink } from "../components/NavigationLink/index.tsx";
+import { DonateButton } from "../components/DonateButton";
+import { DynamicVolunteers } from "../components/DynamicVolunteers";
+import { HorizontalLine } from "../components/HorizontalLine";
+import { NavigationLink } from "../components/NavigationLink";
 import "../components/styles/contributors.css";
-import { Volunteer } from "../components/Volunteer/index.tsx";
+import { Volunteer } from "../components/Volunteer";
 
 export const metadata = mergeMetadata({
 	title: "Contribute to Long Lane Pasture",
@@ -82,7 +83,7 @@ export default () => (
 					</li>
 				</ul>
 			</Volunteer>
-			<hr />
+			<HorizontalLine />
 			<p>
 				Here are some of the faces you might see on a Saturday morning. Come
 				have a biscuit with us! 🍪
