@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import type { Organization, WebSite, WithContext } from "schema-dts";
 import { ClosureNotice } from "./components/ClosureNotice";
 import { CustomScriptLoader } from "./components/CustomScriptLoader";
 import { NavigationLink } from "./components/NavigationLink";
@@ -55,6 +56,35 @@ export const viewport: Viewport = {
 	userScalable: true,
 };
 
+const organizationJsonLd: WithContext<Organization> = {
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	name: "Long Lane Pasture",
+	alternateName: "LLP",
+	url: "https://longlanepasture.org/",
+	logo: "https://longlanepasture.org/assets/llpsquare.jpeg",
+	sameAs: ["https://github.com/longlanepasture/longlanepasture.org"],
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "Long Lane",
+		addressLocality: "Finchley",
+		addressRegion: "London",
+		postalCode: "N3 2RN",
+		addressCountry: "GB",
+	},
+	areaServed: {
+		"@type": "Place",
+		name: "Barnet, London",
+	},
+	nonprofitStatus: "https://schema.org/UKTrust",
+};
+const websiteJsonLd: WithContext<WebSite> = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	url: "https://longlanepasture.org/",
+	name: "Long Lane Pasture",
+};
+
 export default function RootLayout({
 	children,
 }: {
@@ -79,6 +109,18 @@ export default function RootLayout({
 					type="application/xml"
 					title="Sitemap"
 					href="/sitemap.xml"
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(organizationJsonLd),
+					}}
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(websiteJsonLd),
+					}}
 				/>
 			</head>
 			<body>

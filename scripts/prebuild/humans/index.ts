@@ -10,7 +10,6 @@ export async function humans({
 		TEAM: {
 			"Long Lane Pasture Trust": null,
 			Contact: "longlanepasture@gmail.com",
-			X: "@LLPasture",
 			From: "Finchley, London, UK",
 		},
 		SITE: {

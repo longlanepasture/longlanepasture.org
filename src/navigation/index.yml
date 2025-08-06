@@ -18,9 +18,6 @@
   nav: false
 - name: 💚 Donate
   path: https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment/donate
-- name: "𝕏"
-  path: https://x.com/LLPasture
-  nav: false
 - name: Email Us
   path: mailto:longlanepasture@gmail.com
   nav: false
