@@ -7,14 +7,13 @@ export function VideoWrapper({
 	children,
 	playbackRate,
 }: {
-	children: ReactElement;
+	children: ReactElement<{ id?: string }>;
 	playbackRate?: number;
 }) {
 	useEffect(() => {
-		if (!children.props.id) return;
-		const video = document.getElementById(
-			children.props.id,
-		) as HTMLVideoElement;
+		const { id } = children.props;
+		if (!id) return;
+		const video = document.getElementById(id) as HTMLVideoElement;
 		if (playbackRate) video.playbackRate = playbackRate;
 	});
 
