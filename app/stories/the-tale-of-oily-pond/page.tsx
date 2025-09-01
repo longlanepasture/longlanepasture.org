@@ -41,13 +41,12 @@ export default () => {
 				/>
 				<figcaption>
 					<h2>The Tale of Oily Pond</h2>
-					<p className="tagline">Adapted from Donald Lyven</p>
+					<p className="tagline">Adapted from Donald Lyven, August 2025</p>
 				</figcaption>
 			</figure>
 			<h2>
 				From hidden leaks and black smoke to a thriving wildflower meadow.
 			</h2>
-			<p className="tagline">August 2025</p>
 			<p>
 				Before it became Jubilee Meadow, the ground was a troubled place. Oil
 				oozed up through the soil, and for years we assumed it was the legacy of

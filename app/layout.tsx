@@ -85,11 +85,7 @@ const websiteJsonLd: WithContext<WebSite> = {
 	name: "Long Lane Pasture",
 };
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactElement;
-}) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
 	const dd = (num: number): string => (num < 10 ? `0${num}` : num.toString());
 	return (
 		<html lang="en-GB">
