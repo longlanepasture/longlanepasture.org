@@ -8,17 +8,18 @@ export async function headers(): Promise<string> {
 	const table: string[][] = [
 		["Access-Control-Allow-Origin", "*"],
 		["X-Robots-Tag", "all"],
-		["X-XSS-Protection", "1"],
 		// Must include 'unsafe-inline' because Next uses inline scripts
 		[
 			"Content-Security-Policy",
 			`default-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline'`,
-			`script-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline'`,
+			`script-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline' 'unsafe-eval'`,
 			"object-src 'self'",
 			`frame-src ${GOOGLE_DOMAIN}`,
 			`img-src 'self' ${GOOGLE_MAPS_DOMAIN}`,
 			`child-src ${GOOGLE_MAPS_DOMAIN}`,
 		],
+		["Document-Policy", "document-write=?0"],
+		["Cross-Origin-Opener-Policy", "same-origin"],
 		["Permissions-Policy", `geolocation=("${GOOGLE_MAPS_DOMAIN}")`],
 	];
 	const headers = table
