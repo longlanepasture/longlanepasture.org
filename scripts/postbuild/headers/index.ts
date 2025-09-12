@@ -25,14 +25,12 @@ export async function headers(): Promise<string> {
 		],
 	};
 	const headers = Object.entries(tables)
-		.map(([path, table]) =>
-			[
-				path,
-				table.map(([name, ...rest]) =>
-					["\t", name, ": ", rest.join("; ")].join(""),
-				),
-			],
-		)
+		.map(([path, table]) => [
+			path,
+			table.map(([name, ...rest]) =>
+				["\t", name, ": ", rest.join("; ")].join(""),
+			),
+		])
 		.flat()
 		.flat()
 		.join("\n");
