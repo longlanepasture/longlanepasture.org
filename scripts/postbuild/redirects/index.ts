@@ -27,21 +27,10 @@ export async function redirects() {
 		["/getinvolved*", "/contribute/", "301"],
 		["/news*", "/history/", "301"],
 		["/newsletters*", "/history/#newsletters", "301"],
-		["/assets/newsletters/*", "/history/#newsletters", "301"],
 		["/photogallery*", "/photos/", "301"],
 		["/thetrust*", "/the-trust/", "301"],
 		["/visitor-information/", "/visit/", "301"],
 		["/visitorinfo.html", "/visit/", "301"],
-		[
-			"/tudor",
-			"/filing/Vote%20Tudor%20Creativity%20in%20Nature%20letter.pdf",
-			"302",
-		],
-		[
-			"/tudor/",
-			"/filing/Vote%20Tudor%20Creativity%20in%20Nature%20letter.pdf",
-			"302",
-		],
 	]
 		.map((line) => line.join(" "))
 		.join("\n");
