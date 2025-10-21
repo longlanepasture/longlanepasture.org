@@ -9,9 +9,9 @@
   },
   "scripts": {
     "prepare": "node ./scripts/prebuild/index.ts",
-    "predev": "npm run prepare",
+    "predev": "node --run prepare",
     "dev": "next",
-    "prebuild": "npm run prepare",
+    "prebuild": "node --run prepare",
     "build": "next build",
     "postbuild": "node ./scripts/postbuild/index.ts",
     "start": "serve out",

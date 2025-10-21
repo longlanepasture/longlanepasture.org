@@ -9,7 +9,7 @@ export async function volunteers(): Promise<string> {
 		.filter((file) => file.match(/\.(jpe?g|png|gif|webp|svg)$/i))
 		.map((file) => ({
 			src: `/assets/volunteers/${file}`,
-			alt: file.replace(/\.\w+$/, ""),
+			alt: file.replace(/\..*/, ""),
 		}));
 	return [
 		"/* This file is generated automatically from '/public/assets/volunteers' */",
