@@ -14,9 +14,13 @@ const normalise = (string: string): string =>
 export function NavigationLink({
 	children,
 	to,
+	anchor,
+	style,
 }: {
 	to: string;
 	children?: React.ReactNode;
+	anchor?: string;
+	style?: React.CSSProperties;
 	text?: string;
 }): JSX.Element | null {
 	const page = navigation.find((link) =>
@@ -29,7 +33,7 @@ export function NavigationLink({
 	const { name, path } = page;
 
 	return (
-		<LinkItem name={name} path={path}>
+		<LinkItem name={name} path={path} anchor={anchor} style={style}>
 			{children ?? name}
 		</LinkItem>
 	);

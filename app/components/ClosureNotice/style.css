@@ -1,36 +1,5 @@
-.notice {
-	background: rgb(255, 255, 185);
-	color: black;
-	border: 2px solid rgb(165, 0, 0);
-	position: relative;
-	padding: 0.5rem;
-
+#closure-notice {
 	&:before {
 		content: "🌧️";
-		float: left;
-		font-size: 1.5em;
-		margin: 0 0.5em 0 0;
-		background: white;
-		padding: 2px;
-		border: 1px solid black;
-		border-radius: 50%;
-		width: 1.5em;
-		line-height: 1.5em;
-		text-align: center;
-		vertical-align: middle;
-		text-shadow: -1px 1px 0 black;
-	}
-
-	.close {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 2em;
-		height: 2em;
-		text-align: center;
-		border-radius: 50%;
-		cursor: pointer;
-		background: transparent;
-		border: none;
 	}
 }

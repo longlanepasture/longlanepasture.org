@@ -21,10 +21,31 @@ export async function newsletters(): Promise<string> {
 			}
 			return 0;
 		});
+	const audios = dirContent
+		.filter((file) => file.match(/\.(mp3)$/i))
+		.map((file) => ({
+			url: `/assets/newsletters/${file}`,
+			issue: file.match(/^llp-newsletter(?<number>\w+)-/)?.groups?.number,
+			date: file
+				.match(/(?<date>[^-]+-+\d+)\.mp3/)
+				?.groups?.date.replace(/-/g, " ")
+				.replace(/^(.)/, (letter) => letter.toUpperCase()),
+		}))
+		.sort((a, b) => {
+			if (a.issue && b.issue) {
+				return parseInt(b.issue) - parseInt(a.issue);
+			}
+			return 0;
+		});
 	return [
 		"/* This file is generated automatically from '/public/assets/newsletters' */",
 		`export const newsletters: {url: string, issue?: string, date?: string}[] = ${JSON.stringify(
 			files,
+			null,
+			2,
+		)};`,
+		`export const audioNewsletters: {url: string, issue?: string, date?: string}[] = ${JSON.stringify(
+			audios,
 			null,
 			2,
 		)};`,

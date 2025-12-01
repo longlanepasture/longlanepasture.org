@@ -2,6 +2,7 @@ import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
 import { mergeMetadata, URLify } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { LatestNewsletter } from "../components/LatestNewsletter";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
@@ -181,15 +182,7 @@ export default () => (
 				📰 Newsletters
 				<a href="#newsletters" aria-label="Anchor link to Newsletters"></a>
 			</h2>
-			<p>
-				We publish newsletters.
-				<br />
-				You can read the latest issue, {newsletters[0].date}:{" "}
-				<a href={newsletters[0].url} target="_blank">
-					Issue № {newsletters[0].issue}
-				</a>
-				.
-			</p>
+			<LatestNewsletter />
 			<details>
 				<summary>Previous newsletters are available (click here)</summary>
 				<ul>

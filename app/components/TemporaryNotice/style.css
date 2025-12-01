@@ -1,0 +1,8 @@
+#temporary-notice {
+	background: white;
+	color: black;
+	border: 2px solid rgb(145, 145, 145);
+	&:before {
+		content: "📰";
+	}
+}

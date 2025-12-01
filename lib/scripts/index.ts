@@ -8,21 +8,28 @@ function start() {
 		(event.target as HTMLAnchorElement)?.blur();
 	});
 
-	notice();
+	notice("#closure-notice", false).then(
+		(shown) => shown || notice("#temporary-notice", true),
+	);
 }
 
-async function notice(): Promise<void> {
-	const notice = document.querySelector(".notice");
-	if (!notice) return;
-	const shouldShowNotice = await fetch("/api/notice")
-		.then((response) => response.text())
-		.then((remoteState) => /^t/i.test(remoteState));
-	if (!shouldShowNotice) return notice.remove();
-	const DISMISS_NOTICE_UNTIL = "kJRPXQY6";
+async function notice(selector: string, force = false): Promise<boolean> {
+	const notice = document.querySelector(selector);
+	if (!notice) return false;
+	const shouldShowNotice =
+		force ||
+		(await fetch("/api/notice")
+			.then((response) => response.text())
+			.then((remoteState) => /^t/i.test(remoteState)));
+	if (!shouldShowNotice) {
+		notice.remove();
+		return false;
+	}
+	const DISMISS_NOTICE_UNTIL = "kJRPXQY6" + selector;
 	const time = window.localStorage.getItem(DISMISS_NOTICE_UNTIL);
 	if (time && Number(time) > Date.now()) {
 		notice.remove();
-		return;
+		return false;
 	}
 	window.localStorage.removeItem(DISMISS_NOTICE_UNTIL);
 	notice.classList.remove("hidden");
@@ -33,6 +40,7 @@ async function notice(): Promise<void> {
 			(Date.now() + 1000 * 60 * 60 * 24 * 30).toString(),
 		);
 	});
+	return true;
 }
 
 (() => {

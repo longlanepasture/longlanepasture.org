@@ -1,14 +1,8 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "types": [
-      "@types/react-image-gallery"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["@types/react-image-gallery"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -37,7 +31,5 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": [
-    "functions/**/*"
-  ]
+  "exclude": ["functions/**/*"]
 }
