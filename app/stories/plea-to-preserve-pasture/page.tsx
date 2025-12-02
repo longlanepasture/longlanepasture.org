@@ -7,7 +7,7 @@ export const metadata = mergeMetadata({
 	description:
 		"An article about the Long Lane Pasture in 2012, as appeared in The Archer newspaper.",
 	alternates: {
-		canonical: "http://the-archer.co.uk/archive/2012/2012Aug05.pdf",
+		canonical: "https://the-archer.co.uk/archive/2012/2012Aug05.pdf",
 	},
 });
 
@@ -17,7 +17,7 @@ export default () => (
 		<p className="tagline">
 			By John Lawrence. As published on{" "}
 			<a
-				href="http://the-archer.co.uk/archive/2012/2012Aug05.pdf"
+				href="https://the-archer.co.uk/archive/2012/2012Aug05.pdf"
 				target="_blank"
 				rel="noopener"
 				aria-label="Read the full article in The Archer"

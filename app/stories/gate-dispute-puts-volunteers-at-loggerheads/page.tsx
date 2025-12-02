@@ -6,7 +6,7 @@ export const metadata = mergeMetadata({
 	description:
 		"Volunteers at Long Lane Pasture are locked in a dispute over access with their neighbours at Pointalls Allotments",
 	alternates: {
-		canonical: "http://www.the-archer.co.uk/archive/2020/2020Feb03.pdf",
+		canonical: "https://www.the-archer.co.uk/archive/2020/2020Feb03.pdf",
 	},
 	openGraph: {
 		images: [
@@ -24,7 +24,7 @@ export default () => (
 		<p className="tagline">
 			By John Dearing. As published on{" "}
 			<a
-				href="http://www.the-archer.co.uk/archive/2020/2020Feb03.pdf"
+				href="https://www.the-archer.co.uk/archive/2020/2020Feb03.pdf"
 				target="_blank"
 				rel="noopener"
 				aria-label="Read the full article in The Archer"

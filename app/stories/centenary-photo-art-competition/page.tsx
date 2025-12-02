@@ -6,7 +6,7 @@ export const metadata = mergeMetadata({
 	description:
 		"A competition to celebrate the centenary of the Long Lane Pasture nature reserve",
 	alternates: {
-		canonical: "http://the-archer.co.uk/archive/2012/2012Jul04.pdf",
+		canonical: "https://the-archer.co.uk/archive/2012/2012Jul04.pdf",
 	},
 	openGraph: {
 		images: [

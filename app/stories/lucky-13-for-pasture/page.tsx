@@ -5,7 +5,7 @@ export const metadata = mergeMetadata({
 	title: "Lucky 13 for Pasture",
 	description: "An article about girl guides visit to Long Lane Pasture.",
 	alternates: {
-		canonical: "http://www.the-archer.co.uk/archive/2011/2011Aug08.pdf",
+		canonical: "https://www.the-archer.co.uk/archive/2011/2011Aug08.pdf",
 	},
 });
 
@@ -15,7 +15,7 @@ export default () => (
 		<p className="tagline">
 			By Maureen Delandro. As published on{" "}
 			<a
-				href="http://www.the-archer.co.uk/archive/2011/2011Aug08.pdf"
+				href="https://www.the-archer.co.uk/archive/2011/2011Aug08.pdf"
 				target="_blank"
 				rel="noopener"
 				aria-label="Read the full article in The Archer"

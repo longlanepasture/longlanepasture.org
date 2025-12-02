@@ -6,7 +6,7 @@ export const metadata = mergeMetadata({
 	description:
 		"Long Lane Pasture's first event of the year was a Pond Life day on 16 April.",
 	alternates: {
-		canonical: "http://the-archer.co.uk/archive/2011/2011Jun11.pdf",
+		canonical: "https://the-archer.co.uk/archive/2011/2011Jun11.pdf",
 	},
 	openGraph: {
 		images: [
@@ -24,7 +24,7 @@ export default () => (
 		<p className="tagline">
 			By John Dearing. As published on{" "}
 			<a
-				href="http://the-archer.co.uk/archive/2011/2011Jun11.pdf"
+				href="https://the-archer.co.uk/archive/2011/2011Jun11.pdf"
 				target="_blank"
 				rel="noopener"
 				aria-label="Read the full article in The Archer"

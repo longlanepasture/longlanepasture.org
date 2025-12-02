@@ -1,6 +1,6 @@
-- name: Avenue House
-  href: http://www.avenuehouse.org.uk/
-  description: Beautiful local historic garden and public park. Donated benches to the Pasture.
+- name: Stephens House and Gardens
+  href: https://www.stephenshouseandgardens.com/
+  description: Beautiful local historic garden and park. Donated benches to the Pasture.
 - name: Coppetts Wood
   href: https://coppettswood.wordpress.com/
   description: A nature reserve on the North Circular
@@ -11,19 +11,19 @@
   href: https://www.tnlcommunityfund.org.uk/funding/programmes/celebratenationallottery25
   description: "Provided funding the pond, fencing and hedges."
 - name: Barnet Federation of Allotment Societies
-  href: http://www.barnetallotments.org.uk/
+  href: https://www.barnetallotments.org.uk/
   description: Given donations and a long-term supporter.
 - name: Barnet Voluntary Service Council
   href: https://www.barnet.gov.uk/community/get-involved-your-community/residents-and-individual-volunteers
   description: Long Lane Pasture Trust is a member. BVSC provides training and support.
 - name: Breathing Places
-  href: http://www.bbc.co.uk/breathingplaces
+  href: https://www.bbc.co.uk/breathingplaces
   description: National Lottery scheme which funded path, sign, mower and educational materials.
 - name: British Trust for Conservation Volunteers
-  href: http://www.btcv.org.uk/
-  description: LLP is a Community Network Member and BTCV supplies our insurance.
+  href: https://www.tcv.org.uk/
+  description: LLP is a Community Network Member and TCV supplies our insurance.
 - name: Butterfly Conservation
-  href: http://www.butterfly-conservation.org/
+  href: https://butterfly-conservation.org/
   description: Provides information on the butterflies of the Pasture.
 - name: The City Bridge Trust
   href: https://www.citybridgefoundation.org.uk/
@@ -32,13 +32,13 @@
   href: https://www.finchleysociety.org.uk/long-lane-pasture/
   description: Regular donor and supporter which protects areas of historic or public interest in Finchley.
 - name: London Natural History Society
-  href: http://www.lnhs.org.uk/
+  href: https://www.lnhs.org.uk/
   description: Top level expertise on natural history in London.
 - name: London Borough of Barnet
-  href: http://www.barnet.gov.uk/
+  href: https://www.barnet.gov.uk/
   description: Owner of the Pasture from whom we lease the land.
 - name: London Wildlife Trust
-  href: http://www.wildlondon.org.uk/
+  href: https://www.wildlondon.org.uk/
   description: Conservation charity for London's wildlife with nature reserves across the Capital.
 - name: Octavia Hill Society
   href: https://octaviahill.org/the-society/
@@ -47,16 +47,16 @@
   href: https://pointallscommunityvolunteers.co.uk/
   description: Self managed local allotment society. Established for over 90 years.
 - name: Tree Council
-  href: http://www.treecouncil.org.uk/
+  href: https://treecouncil.org.uk/
   description: Runs National Tree Planting Week in which LLP takes part.
 - name: Woodcraft Wild Space
-  href: http://www.woodcroft.org.uk/
+  href: https://www.woodcroft.org.uk/
   description: Greenspace in the neighbouring Borough of Enfield which was also saved by local residents.
 - name: GoodGym
   href: https://www.goodgym.org/v3/organisations/long-lane-pasture
   description: GoodGym have been helping out at the Pasture since 2017.
 - name: The Archer newspaper
-  href: http://www.the-archer.co.uk/search_results.php?cx=001587731801969052995:wrz3r22be4o&q=%22Long%20Lane%20Pasture%22
+  href: https://www.the-archer.co.uk/search_results.php?cx=001587731801969052995:wrz3r22be4o&q=%22Long%20Lane%20Pasture%22
   description: East Finchley's community newspaper.
 - name: Chris Brown
   href: http://www.cwhbrown.com/

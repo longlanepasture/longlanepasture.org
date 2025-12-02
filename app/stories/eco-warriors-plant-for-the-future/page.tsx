@@ -7,7 +7,7 @@ export const metadata = mergeMetadata({
 	description:
 		"An article about the school activities in Long Lane Pasture, April 2024, as appeared in The Archer newspaper.",
 	alternates: {
-		canonical: "http://www.the-archer.co.uk/archive/2024/2024Apr08.pdf",
+		canonical: "https://www.the-archer.co.uk/archive/2024/2024Apr08.pdf",
 	},
 	openGraph: {
 		images: [
@@ -32,7 +32,7 @@ export default () => (
 			<p className="tagline">
 				By Jacqueline Lotan. As published on{" "}
 				<a
-					href="http://www.the-archer.co.uk/archive/2024/2024Apr08.pdf"
+					href="https://www.the-archer.co.uk/archive/2024/2024Apr08.pdf"
 					target="_blank"
 					rel="noopener"
 					aria-label="Read the full article in The Archer"
