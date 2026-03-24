@@ -1,10 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import type { Organization, WebSite, WithContext } from "schema-dts";
-import { ClosureNotice } from "./components/ClosureNotice";
 import { CustomScriptLoader } from "./components/CustomScriptLoader";
 import { NavigationLink } from "./components/NavigationLink";
 import { NavList } from "./components/NavList";
-import { TemporaryNotice } from "./components/TemporaryNotice";
 import "./layout.css";
 
 export const metadata: Metadata = {
@@ -133,8 +131,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 					</nav>
 				</header>
 				<main>
-					<ClosureNotice />
-					<TemporaryNotice />
 					{children}
 					<footer>
 						<NavList filter="footer" />

@@ -1,5 +1,9 @@
 export function OpeningTimes() {
-	const winter = ["🌧", "November-March", "Weekends, bank holidays: 10am-3pm"];
+	const winter = [
+		"🌧",
+		"November-March",
+		"Coordinate with volunteers for access",
+	];
 	const summer = ["☀️", "April-October", "Every Day: 9am-7pm or dusk"];
 	const volunteering = ["📅", "All Year", "Saturday volunteering: 10am-12noon"];
 	const lines =
@@ -22,10 +26,19 @@ export function OpeningTimes() {
 					))}
 				</tbody>
 			</table>
-			<p className="highlight">
-				Opening times depend on volunteer availability. While we aim to open
-				during scheduled hours, we cannot always guarantee it.
-			</p>
+			{new Date().getMonth() >= 10 || new Date().getMonth() <= 2 ? (
+				<p className="highlight">
+					Winter is a time for the pasture to recover and regenerate, allowing
+					us to carry out essential maintenance like clearing brambles,
+					pollarding trees, and restoring ponds. To coordinate visits during
+					this period, please get in touch with our volunteers.
+				</p>
+			) : (
+				<p className="highlight">
+					Opening times depend on volunteer availability. While we aim to open
+					during scheduled hours, we cannot always guarantee it.
+				</p>
+			)}
 		</>
 	);
 }
