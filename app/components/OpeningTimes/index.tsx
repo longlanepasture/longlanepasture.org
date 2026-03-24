@@ -1,3 +1,5 @@
+import { season } from "../../../lib/helpers/season";
+
 export function OpeningTimes() {
 	const winter = [
 		"🌧",
@@ -6,10 +8,9 @@ export function OpeningTimes() {
 	];
 	const summer = ["☀️", "April-October", "Every Day: 9am-7pm or dusk"];
 	const volunteering = ["📅", "All Year", "Saturday volunteering: 10am-12noon"];
-	const lines =
-		new Date().getMonth() >= 10 || new Date().getMonth() <= 2
-			? [winter, summer, volunteering]
-			: [summer, winter, volunteering];
+	const lines = season.winter
+		? [winter, summer, volunteering]
+		: [summer, winter, volunteering];
 	return (
 		<>
 			<h3>
@@ -26,7 +27,7 @@ export function OpeningTimes() {
 					))}
 				</tbody>
 			</table>
-			{new Date().getMonth() >= 10 || new Date().getMonth() <= 2 ? (
+			{season.winter ? (
 				<p className="highlight">
 					Winter is a time for the pasture to recover and regenerate, allowing
 					us to carry out essential maintenance like clearing brambles,

@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/longlanepasture/longlanepasture.org"
   },
+  "workspaces": [
+    "workspaces/*"
+  ],
   "scripts": {
     "prepare": "node ./scripts/prebuild/index.ts",
     "predev": "node --run prepare",
@@ -16,7 +19,8 @@
     "postbuild": "node ./scripts/postbuild/index.ts",
     "start": "serve out",
     "pages": "npx wrangler pages dev out --binding NOTICE=\"$NOTICE\"",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "npm t --workspaces --if-present"
   },
   "dependencies": {
     "isbot": "^5.1.20",

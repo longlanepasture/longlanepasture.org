@@ -13,3 +13,6 @@ next-env.d.ts
 
 # Wrangler
 .wrangler
+
+# Playwright
+test-results

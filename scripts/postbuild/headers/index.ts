@@ -19,7 +19,6 @@ export async function headers(): Promise<string> {
 				`img-src 'self' ${GOOGLE_MAPS_DOMAIN}`,
 				`child-src ${GOOGLE_MAPS_DOMAIN}`,
 			],
-			["Document-Policy", "document-write=?0"],
 			["Cross-Origin-Opener-Policy", "same-origin"],
 			["Permissions-Policy", `geolocation=("${GOOGLE_MAPS_DOMAIN}")`],
 		],
