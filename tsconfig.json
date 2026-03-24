@@ -1,8 +1,14 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["@types/react-image-gallery"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "types": [
+      "@types/react-image-gallery"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,10 +17,10 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -23,13 +29,15 @@
     ]
   },
   "include": [
-    "interfaces.d.ts",
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "interfaces.d.ts",
+    "next-env.d.ts",
     "next.config.js",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["functions/**/*"]
+  "exclude": [
+    "functions/**/*",
+    ".next/**/*"
+  ]
 }
