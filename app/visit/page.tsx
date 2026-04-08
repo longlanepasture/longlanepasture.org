@@ -2,6 +2,7 @@ import { amenities } from "../../dynamic/amenities";
 import { mergeMetadata } from "../../lib/helpers";
 import { homepage } from "../../package.json";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { GoogleMapEmbed } from "../components/GoogleMapEmbed";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 import { OpeningTimes } from "../components/OpeningTimes";
@@ -221,15 +222,11 @@ export default () => (
 					risks.assume.forest
 				</a>
 			</p>
-			<iframe
+			<GoogleMapEmbed
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1429.6774081860665!2d-0.1822392865961423!3d51.59659596521669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761a02481df38b%3A0x9d4d3e1b839bb764!2sLong%20Lane%20Pasture!5e0!3m2!1sen!2suk!4v1721736907974!5m2!1sen!2suk"
-				style={{ width: "100%", border: "none" }}
-				height="450"
-				allowFullScreen={true}
-				loading="lazy"
-				referrerPolicy="no-referrer-when-downgrade"
+				altLink="https://maps.app.goo.gl/cbM3wTY5vg3n2cYt6"
 				title="Long Lane Pasture Location on Google Maps"
-			></iframe>
+			/>
 			<h3>Get Here On Foot</h3>
 			<p>
 				The entrance to the Pasture is on an access road leading between{" "}

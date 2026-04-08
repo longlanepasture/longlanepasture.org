@@ -17,19 +17,17 @@ export default () => (
 	<article>
 		<h2>Privacy Notice</h2>
 		<p>
-			<small>Last updated: Sep 2024</small>
+			<small>Last updated: Apr 2026</small>
 		</p>
 		<p>
-			This website does not collect or pass on personal information to third
-			parties.
+			We do not store your personal data on our servers, and we do not send
+			personal data to third parties from our own systems.
 		</p>
 		<p>
-			We use Google Maps{" "}
-			<strong>
-				iframe<sup>†</sup>
-			</strong>{" "}
-			to display a map with the location of Long Lane Pasture. By using this
-			website, you agree to be bound by{" "}
+			On the Visitor Information page, Google Maps is loaded only if you click
+			the "Load map" button. If you choose to load it, your browser connects
+			directly to Google and Google may process data such as your IP address and
+			browser/device details under{" "}
 			<a
 				href="https://policies.google.com/privacy"
 				target="_blank"
@@ -39,17 +37,15 @@ export default () => (
 			</a>
 			.
 		</p>
-		<blockquote>
-			<small>
-				<sup>†</sup> An "iframe" is an HTML element that allows an external
-				webpage to be embedded within an HTML document. The content of the
-				iframe is provided by Google Maps.
-			</small>
-		</blockquote>
 		<p>
-			Aside from Google Maps, we do not use any analytics, tracking, advertising
-			services, embedded content, social media plugins, forms, cookies, or
-			third-party services that may collect personal information.
+			We use local browser storage (localStorage) on your device to remember
+			your preferences, including dismissing notices and whether you have chosen
+			to load Google Maps. This preference data stays in your browser and is not
+			stored remotely by us.
+		</p>
+		<p>
+			Aside from the optional Google Maps embed, we do not use analytics,
+			advertising trackers, social media plugins, or remote profiling tools.
 		</p>
 		<p>
 			Your privacy is important to us. If you have any questions about this

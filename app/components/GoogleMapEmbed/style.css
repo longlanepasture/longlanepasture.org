@@ -1,0 +1,19 @@
+.map-consent {
+	border: 1px solid #d0d0d0;
+	padding: 1rem 4rem 7rem 4rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	background: #fafafa url(/assets/google-map-background.png) no-repeat center
+		center;
+	height: 448px;
+	cursor: pointer;
+}
+.map-consent * {
+	color: #000;
+}
+.map-consent p {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 0.5rem;
+	border-radius: 0.375rem;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
