@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers/index.ts";
+import { homepage } from "../../package.json";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { DonateButton } from "../components/DonateButton";
 import { DynamicVolunteers } from "../components/DynamicVolunteers";
@@ -11,6 +12,9 @@ export const metadata = mergeMetadata({
 	title: "Contribute to Long Lane Pasture",
 	description:
 		"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.",
+	alternates: {
+		canonical: `${homepage}/contribute/`,
+	},
 });
 
 export default () => (

@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../../lib/helpers";
+import { homepage } from "../../../package.json";
 import { DynamicPicturesGallery } from "../../components/DynamicPicturesGallery";
 import { NavigationLink } from "../../components/NavigationLink";
 
@@ -6,6 +7,9 @@ export const metadata = mergeMetadata({
 	title: "The Tale of Oily Pond",
 	description:
 		"From hidden leaks and black smoke to a thriving wildflower meadow.",
+	alternates: {
+		canonical: `${homepage}/stories/the-tale-of-oily-pond/`,
+	},
 	openGraph: {
 		images: {
 			url: "/assets/stories/the-tale-of-oily-pond/WhatsApp Image 2025-08-13 at 19.16.30.jpeg",

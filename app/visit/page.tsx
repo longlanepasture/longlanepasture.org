@@ -1,5 +1,6 @@
 import { amenities } from "../../dynamic/amenities";
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
@@ -10,6 +11,9 @@ export const metadata = mergeMetadata({
 	title: "Visitor Information for Long Lane Pasture",
 	description:
 		"Everything you need to know about visiting Long Lane Pasture. Opening times, location, and how to get here.",
+	alternates: {
+		canonical: `${homepage}/visit/`,
+	},
 	openGraph: {
 		images: [
 			{

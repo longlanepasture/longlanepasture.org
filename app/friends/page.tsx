@@ -1,11 +1,15 @@
 import { friends } from "../../dynamic/friends";
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "Friends of Long Lane Pasture",
 	description: "Follow the links to find out more about our friends.",
+	alternates: {
+		canonical: `${homepage}/friends/`,
+	},
 });
 
 export default () => (

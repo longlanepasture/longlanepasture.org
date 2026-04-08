@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
@@ -7,6 +8,9 @@ export const metadata = mergeMetadata({
 	title: "Privacy Notice for Long Lane Pasture website",
 	description:
 		"This privacy notice explains how we use any personal information we collect about you when you use this website.",
+	alternates: {
+		canonical: `${homepage}/privacy/`,
+	},
 });
 
 export default () => (

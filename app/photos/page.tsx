@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pictures } from "../../dynamic/gallery";
+import { homepage } from "../../package.json";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { DynamicPicturesGallery } from "../components/DynamicPicturesGallery";
 import { NavigationLink } from "../components/NavigationLink";
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 	description:
 		"Discover the beauty of Long Lane Pasture, where birds, butterflies, and wildflowers thrive.",
 	alternates: {
-		canonical: "https://longlanepasture.org/photos/",
+		canonical: `${homepage}/photos/`,
 	},
 };
 

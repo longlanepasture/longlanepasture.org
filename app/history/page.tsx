@@ -1,6 +1,7 @@
 import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
 import { mergeMetadata, URLify } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { LatestNewsletter } from "../components/LatestNewsletter";
 import { NavigationLink } from "../components/NavigationLink";
@@ -9,6 +10,9 @@ export const metadata = mergeMetadata({
 	title: "The history of Long Lane Pasture",
 	description:
 		"The Pasture is a meadow, which has remained largely undisturbed for centuries.",
+	alternates: {
+		canonical: `${homepage}/history/`,
+	},
 	openGraph: {
 		images: [
 			{

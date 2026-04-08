@@ -1,5 +1,6 @@
 import { species } from "../../dynamic/species";
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
@@ -7,6 +8,9 @@ export const metadata = mergeMetadata({
 	title: "Checklist of Recorded Species at Long Lane Pasture.",
 	description:
 		"A checklist of species recorded at Long Lane Pasture, including plants, birds, mammals, insects, and other wildlife.",
+	alternates: {
+		canonical: `${homepage}/species/`,
+	},
 });
 
 export default () => (

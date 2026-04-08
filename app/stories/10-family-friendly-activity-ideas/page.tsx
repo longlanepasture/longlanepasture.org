@@ -1,10 +1,14 @@
 import { mergeMetadata } from "../../../lib/helpers";
+import { homepage } from "../../../package.json";
 import { NavigationLink } from "../../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "Creative, family-friendly activity ideas to do at Long Lane Pasture",
 	description:
 		"10 creative, family-friendly activity ideas you can do on your next visit to Long Lane Pasture",
+	alternates: {
+		canonical: `${homepage}/stories/10-family-friendly-activity-ideas/`,
+	},
 	openGraph: {
 		images: {
 			url: "https://longlanepasture.org/assets/stories/stories-clouds.jpeg",

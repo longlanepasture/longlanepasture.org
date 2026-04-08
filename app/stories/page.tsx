@@ -1,11 +1,15 @@
 import { navigation } from "../../dynamic/navigation";
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "Stories about Long Lane Pasture",
 	description:
 		"Read stories about the Long Lane Pasture and the people who care for it.",
+	alternates: {
+		canonical: `${homepage}/stories/`,
+	},
 });
 
 export default () => (

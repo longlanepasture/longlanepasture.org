@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 
@@ -6,6 +7,9 @@ export const metadata = mergeMetadata({
 	title: "Regulations and Guidelines while visiting Long Lane Pasture",
 	description:
 		"Please respect the wildlife and other visitors by following these regulations and guidelines.",
+	alternates: {
+		canonical: `${homepage}/regulations/`,
+	},
 });
 
 export default () => (

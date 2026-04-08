@@ -1,4 +1,15 @@
+import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { DonateButton } from "../components/DonateButton";
+
+export const metadata = mergeMetadata({
+	title: "Donate to Long Lane Pasture",
+	description:
+		"Help us protect nature and our community. Donate to support the Long Lane Pasture Trust.",
+	alternates: {
+		canonical: `${homepage}/donate/`,
+	},
+});
 
 export default () => (
 	<>

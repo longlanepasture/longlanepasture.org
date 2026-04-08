@@ -1,5 +1,6 @@
 import { pictures } from "../dynamic/gallery";
 import { mergeMetadata } from "../lib/helpers";
+import { homepage } from "../package.json";
 import { DynamicPicturesGallery } from "./components/DynamicPicturesGallery";
 import { NavigationLink } from "./components/NavigationLink";
 import { OpeningTimes } from "./components/OpeningTimes";
@@ -10,7 +11,7 @@ export const metadata = mergeMetadata({
 	description:
 		"Long Lane Pasture is a volunteer-run nature reserve in Finchley, North London. This peaceful green space provides a home for birds, insects, and wildflowers, serving as an urban sanctuary that connects visitors with nature and supports local conservation.",
 	alternates: {
-		canonical: "https://longlanepasture.org/",
+		canonical: `${homepage}/`,
 	},
 });
 

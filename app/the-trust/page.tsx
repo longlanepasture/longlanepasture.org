@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers";
+import { homepage } from "../../package.json";
 import { NavigationLink } from "../components/NavigationLink";
 import { VideoWrapper } from "../components/VideoWrapper";
 
@@ -6,6 +7,9 @@ export const metadata = mergeMetadata({
 	title: "The Long Lane Pasture Trust",
 	description:
 		"Long Lane Pasture Trust is a charity registered in England & Wales (№ 1122236) and is run in accordance with its Trust Deed.",
+	alternates: {
+		canonical: `${homepage}/the-trust/`,
+	},
 });
 
 export default () => (
