@@ -20,7 +20,36 @@ export async function headers(): Promise<string> {
 				`child-src ${GOOGLE_MAPS_DOMAIN}`,
 			],
 			["Cross-Origin-Opener-Policy", "same-origin"],
+			[
+				"Feature-Policy",
+				[
+					...[
+						"accelerometer",
+						"ambient-light-sensor",
+						"camera",
+						"encrypted-media",
+						"gyroscope",
+						"magnetometer",
+						"microphone",
+						"midi",
+						"payment",
+						"picture-in-picture",
+						"usb",
+						"vibrate",
+						"vr",
+					].map((feature) => `${feature} 'none'`),
+					...["autoplay", "fullscreen", "speaker", "sync-xhr"].map(
+						(feature) => `${feature} 'self'`,
+					),
+					`geolocation ${GOOGLE_MAPS_DOMAIN}`,
+				].join("; "),
+			],
 			["Permissions-Policy", `geolocation=("${GOOGLE_MAPS_DOMAIN}")`],
+			["Referrer-Policy", "strict-origin-when-cross-origin"],
+			[
+				"strict-transport-security",
+				"max-age=31536000; includeSubDomains; preload",
+			],
 		],
 	};
 	const headers = Object.entries(tables)
