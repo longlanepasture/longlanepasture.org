@@ -1,10 +1,11 @@
 import { pictures } from "../dynamic/gallery";
 import { mergeMetadata } from "../lib/helpers";
-import { homepage } from "../package.json";
+import pkg from "../package.json" with { type: "json" };
 import { DynamicPicturesGallery } from "./components/DynamicPicturesGallery";
 import { NavigationLink } from "./components/NavigationLink";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { Volunteer } from "./components/Volunteer";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",

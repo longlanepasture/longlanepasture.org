@@ -1,14 +1,14 @@
 "use client";
 
-import type { ReactImageGalleryItem } from "react-image-gallery";
+import type { GalleryItem } from "react-image-gallery";
 import ReactImageGallery from "react-image-gallery";
 
 export default function PicturesGallery({ pictures }: { pictures?: string[] }) {
-	const images: ReactImageGalleryItem[] =
+	const images: GalleryItem[] =
 		pictures
 			?.filter(Boolean)
 			.map(
-				(original: string): ReactImageGalleryItem => ({
+				(original: string): GalleryItem => ({
 					original,
 					originalAlt: "A picture taken in Long Lane Pasture",
 				}),

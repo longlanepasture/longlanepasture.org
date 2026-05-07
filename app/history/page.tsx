@@ -1,10 +1,11 @@
 import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
 import { mergeMetadata, URLify } from "../../lib/helpers";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { ContactUsLink } from "../components/ContactUsLink";
 import { LatestNewsletter } from "../components/LatestNewsletter";
 import { NavigationLink } from "../components/NavigationLink";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "The history of Long Lane Pasture",

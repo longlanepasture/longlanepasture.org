@@ -1,7 +1,8 @@
 import { mergeMetadata } from "../../../lib/helpers";
-import { homepage } from "../../../package.json";
+import pkg from "../../../package.json" with { type: "json" };
 import { DynamicPicturesGallery } from "../../components/DynamicPicturesGallery";
 import { NavigationLink } from "../../components/NavigationLink";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "The Tale of Oily Pond",

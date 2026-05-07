@@ -1,7 +1,8 @@
 import { mergeMetadata } from "../../lib/helpers";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { NavigationLink } from "../components/NavigationLink";
 import { VideoWrapper } from "../components/VideoWrapper";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "The Long Lane Pasture Trust",

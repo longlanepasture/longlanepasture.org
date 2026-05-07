@@ -15,12 +15,12 @@ test("navigate to 'Visit' page", async ({ page }) => {
 test("navigate image gallery slide", async ({ page }) => {
 	await page.goto("/");
 	await expect(
-		page.getByLabel("Go to Slide 1").first().getAttribute("style"),
-	).resolves.not.toContain("transform: translate3d(-100%, 0px, 0px)");
+		page.getByLabel("Go to Slide 1").first().getAttribute("class"),
+	).resolves.toContain("image-gallery-center");
 	await page.getByLabel("Next Slide").click();
 	await expect(
-		page.getByLabel("Go to Slide 1").first().getAttribute("style"),
-	).resolves.toContain("transform: translate3d(-100%, 0px, 0px)");
+		page.getByLabel("Go to Slide 1").first().getAttribute("class"),
+	).resolves.toContain("image-gallery-left");
 });
 
 test("seasons are represented in order", async ({ page }) => {

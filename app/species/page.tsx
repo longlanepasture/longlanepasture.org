@@ -1,8 +1,9 @@
 import { species } from "../../dynamic/species";
 import { mergeMetadata } from "../../lib/helpers";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Checklist of Recorded Species at Long Lane Pasture.",

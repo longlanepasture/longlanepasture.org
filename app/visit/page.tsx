@@ -1,12 +1,13 @@
 import { amenities } from "../../dynamic/amenities";
 import { mergeMetadata } from "../../lib/helpers";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { ContactUsLink } from "../components/ContactUsLink";
 import { GoogleMapEmbed } from "../components/GoogleMapEmbed";
 import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 import { OpeningTimes } from "../components/OpeningTimes";
 import "./styles.css";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Visitor Information for Long Lane Pasture",

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { pictures } from "../../dynamic/gallery";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { ContactUsLink } from "../components/ContactUsLink";
 import { DynamicPicturesGallery } from "../components/DynamicPicturesGallery";
 import { NavigationLink } from "../components/NavigationLink";
+const { homepage } = pkg;
 
 export const metadata: Metadata = {
 	title: "Photos taken at Long Lane Pasture",

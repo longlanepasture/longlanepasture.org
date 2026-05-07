@@ -1,6 +1,7 @@
 import { mergeMetadata } from "../../lib/helpers";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { DonateButton } from "../components/DonateButton";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Donate to Long Lane Pasture",

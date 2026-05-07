@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import type { Organization, WebSite, WithContext } from "schema-dts";
+import type { Organization, WithContext } from "schema-dts";
 import { CustomScriptLoader } from "./components/CustomScriptLoader";
 import { NavigationLink } from "./components/NavigationLink";
 import { NavList } from "./components/NavList";
 import "./layout.css";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://longlanepasture.org"),
 	title: "Long Lane Pasture",
 	description:
 		"Long Lane Pasture is a wildlife and nature reserve in North London, maintained entirely by volunteers. This community green space offers a peaceful retreat within the city, providing a habitat for diverse wildlife, including birds, insects, and wildflowers. Preserved through local efforts, the pasture serves as a vital urban sanctuary, promoting conservation and education while fostering a connection to nature for visitors of all ages.",
@@ -77,12 +78,6 @@ const organizationJsonLd: WithContext<Organization> = {
 	},
 	nonprofitStatus: "https://schema.org/UKTrust",
 };
-const websiteJsonLd: WithContext<WebSite> = {
-	"@context": "https://schema.org",
-	"@type": "WebSite",
-	url: "https://longlanepasture.org/",
-	name: "Long Lane Pasture",
-};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
 	const dd = (num: number): string => (num < 10 ? `0${num}` : num.toString());
@@ -109,12 +104,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(organizationJsonLd),
-					}}
-				/>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(websiteJsonLd),
 					}}
 				/>
 			</head>

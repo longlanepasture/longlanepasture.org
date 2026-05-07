@@ -1,5 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers/index.ts";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { ContactUsLink } from "../components/ContactUsLink";
 import { DonateButton } from "../components/DonateButton";
 import { DynamicVolunteers } from "../components/DynamicVolunteers";
@@ -7,6 +7,7 @@ import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 import "../components/styles/contributors.css";
 import { Volunteer } from "../components/Volunteer";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Contribute to Long Lane Pasture",

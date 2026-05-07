@@ -1,7 +1,8 @@
 import { navigation } from "../../dynamic/navigation";
 import { mergeMetadata } from "../../lib/helpers";
-import { homepage } from "../../package.json";
+import pkg from "../../package.json" with { type: "json" };
 import { NavigationLink } from "../components/NavigationLink";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Stories about Long Lane Pasture",

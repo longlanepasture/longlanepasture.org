@@ -16,13 +16,13 @@ export function LinkItem({
 }): JSX.Element {
 	const external = path.startsWith("http");
 	const rel = external ? "noopener" : "next";
-	const taregt = external ? "_blank" : undefined;
+	const target = external ? "_blank" : undefined;
 	const label = external ? `${name} (external link)` : `${name} page`;
 	return (
 		<Link
 			href={path + (anchor ? `#${anchor}` : "")}
 			rel={rel}
-			target={taregt}
+			target={target}
 			aria-label={label}
 			prefetch={!external}
 			style={style}

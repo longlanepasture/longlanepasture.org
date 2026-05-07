@@ -50,6 +50,7 @@ export async function headers(): Promise<string> {
 				"strict-transport-security",
 				"max-age=31536000; includeSubDomains; preload",
 			],
+			["Release", new Date().toISOString().split("T")[0]],
 		],
 	};
 	const headers = Object.entries(tables)

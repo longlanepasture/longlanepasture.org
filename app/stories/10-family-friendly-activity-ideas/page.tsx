@@ -1,6 +1,7 @@
 import { mergeMetadata } from "../../../lib/helpers";
-import { homepage } from "../../../package.json";
+import pkg from "../../../package.json" with { type: "json" };
 import { NavigationLink } from "../../components/NavigationLink";
+const { homepage } = pkg;
 
 export const metadata = mergeMetadata({
 	title: "Creative, family-friendly activity ideas to do at Long Lane Pasture",
