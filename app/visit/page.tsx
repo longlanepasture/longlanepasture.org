@@ -94,6 +94,9 @@ export default () => (
 				src="/assets/long-lane-pasture-map.svg"
 				alt="Long Lane Pasture Map"
 			/>
+			<a href="/assets/long-lane-pasture-map.svg" download>
+				Download a map of the Pasture
+			</a>
 		</article>
 		<article id="wildlife-you-might-see">
 			<h2>
