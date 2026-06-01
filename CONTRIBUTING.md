@@ -4,7 +4,7 @@ This project is open to contributions. Please read the following guidelines and 
 
 ## Report an Issue
 
-Report bugs or request features via the [Issues tab](./issues/new). Please include as much detail as possible. We will review it and respond as soon as possible.
+Report bugs or request features via the [Issues tab](https://github.com/longlanepasture/longlanepasture.org/issues/new). Please include as much detail as possible. We will review it and respond as soon as possible.
 
 ## Knowledge Prerequisites
 
@@ -34,7 +34,7 @@ During your work you can use the following commands:
 - Refer to the [structure of this repository](#structure-of-this-repository) to add structured content.
 - We don't observe any specific coding standards, but please ensure your code is readable and maintainable. Try to use best practices.
 - Test your changes locally.
-- Before committing, run npm run build to ensure the static build works without errors.
+- Before committing, run `npm run build` to ensure the static build works without errors.
 - If you make any style changes, please check in different rendering contexts (e.g. mobile, desktop) and different rendering conditions (e.g. light, dark mode).
 
 ## Submit a PR
